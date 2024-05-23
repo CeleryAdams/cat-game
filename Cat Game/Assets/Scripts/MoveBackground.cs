@@ -13,7 +13,7 @@ public class MoveBackground : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        camera = GameObject.Find("Main Camera");
+        camera = GameObject.Find("Virtual Camera");
         defaultSprite = GameObject.Find("trees");
         startPosition = transform.position.x;
         spriteLength = defaultSprite.GetComponent<SpriteRenderer>().bounds.size.x;
